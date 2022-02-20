@@ -7,6 +7,6 @@ int main(void)
     do
     {
         x = get_int("Height: \n");
-    } while (x > 0);
-    printf(% i, x);
+    } while (x < 1);
+    printf("%i\n", x);
 }
