@@ -47,9 +47,9 @@ bool Visa(long long x)
 }
 
 int main(){
-  int x;
+  long long x;
 
   do {
-    x = get_int("Number: ");
+    x = get_long("Number: ");
   }while ()
 }
