@@ -45,3 +45,11 @@ bool Visa(long long x)
   }
   return false;
 }
+
+int main(){
+  int x;
+
+  do {
+    x = get_int("Number: ");
+  }while ()
+}
