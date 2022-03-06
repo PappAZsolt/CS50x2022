@@ -64,7 +64,7 @@ int main()
     if (k > 99)
       while (k)
       {
-        sum += k * 2;
+        sum += (k % 10) * 2;
         k /= 10;
       }
 
