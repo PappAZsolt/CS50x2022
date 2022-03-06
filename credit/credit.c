@@ -6,7 +6,6 @@ bool AE(long long x)
   if (x == 34 || x == 37)
   {
     return true;
-    return false;
   }
 
   return false;
@@ -17,7 +16,6 @@ bool MC(long long x)
   if (x == 51 || x == 52 || x == 53 || x == 54 || x == 55)
   {
     return true;
-    return false;
   }
 
   return false;
@@ -25,15 +23,13 @@ bool MC(long long x)
 
 bool Visa(long long x)
 {
-  if (x == 13 || x == 1)
+  if (x == 13 || x == 16)
   {
     return true;
-    return false;
   }
 
   return false;
 }
-
 
 int main()
 {
@@ -75,12 +71,18 @@ int main()
   while (x)
   {
     sum += x % 10;
-    x/=100;
+    x /= 100;
   }
 
-  if (sum%10 == 0){
-    if (aux == 15)
-     printf("AMEX\n");
-    if (aux == )
+  if (sum % 10 == 0)
+  {
+    if (cnt == 15 && AE(aux) == true)
+      printf("AMEX\n");
+    else if (cnt == 16 && MC(aux) == true)
+      printf("MASTERCARD\n");
+    else if ((cnt == 13 || cnt == 16) && Visa(aux/10) == true)
+      printf("VISA\n");
+    else
+      printf("INVALID\n");
   }
 }
