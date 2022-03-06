@@ -3,12 +3,6 @@
 
 bool AE(long long x)
 {
-  if (x == 15)
-  {
-    while (x <= 10)
-    {
-      x /= 10;
-    }
     if (x == 34 || x == 37)
       return true;
     return false;
@@ -18,12 +12,6 @@ bool AE(long long x)
 
 bool MC(long long x)
 {
-  if (x == 16)
-  {
-    while (x <= 10)
-    {
-      x /= 10;
-    }
     if (x == 51 || x == 52 || x == 53 || x == 54 || x == 55)
       return true;
     return false;
@@ -33,12 +21,6 @@ bool MC(long long x)
 
 bool Visa(long long x)
 {
-  if (x == 16)
-  {
-    while (x <= 10)
-    {
-      x /= 10;
-    }
     if (x == 13 || x == 1)
       return true;
     return false;
@@ -46,10 +28,13 @@ bool Visa(long long x)
   return false;
 }
 
+int type(int x){
+  if (x == )
+}
+
 int main(){
   long long x;
-
   do {
     x = get_long("Number: ");
-  }while ()
+  }while (x > 1)
 }
