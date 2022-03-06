@@ -23,7 +23,7 @@ bool MC(long long x)
 
 bool Visa(long long x)
 {
-  if (x == 13 || x == 16)
+  if (x == 4)
   {
     return true;
   }
@@ -80,7 +80,7 @@ int main()
       printf("AMEX\n");
     else if (cnt == 16 && MC(aux) == true)
       printf("MASTERCARD\n");
-    else if ((cnt == 13 || cnt == 16) && Visa(aux/10) == true)
+    else if ((cnt == 13 || cnt == 16) && Visa(aux / 10) == true)
       printf("VISA\n");
     else
       printf("INVALID\n");
