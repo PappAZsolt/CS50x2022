@@ -48,9 +48,9 @@ int main()
   } while (x < 1);
   long long aux = x;
   int cnt = 2;
-  while (aux)
+  while (aux > 10)
   {
-    aux--;
+    aux /= 10;
     cnt++;
   }
   printf("%i", cnt);
