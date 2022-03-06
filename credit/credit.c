@@ -66,13 +66,13 @@ int main()
     {
       while (LastDigit)
       {
-        sum += (LastDigit % 10) * 2;
+        sum += ((LastDigit % 10) * 2);
         LastDigit /= 10;
       }
     }
     else
       sum += LastDigit;
-     x2/=100;
+    x2 /= 100;
   }
 
   printf("%i", sum);
