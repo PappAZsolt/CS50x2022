@@ -78,11 +78,15 @@ int main()
   {
     if (cnt == 15 && AE(aux) == true)
       printf("AMEX\n");
-    else if (cnt == 16 && MC(aux) == true)
+    if (cnt == 16 && MC(aux) == true)
       printf("MASTERCARD\n");
-    else if ((cnt == 13 || cnt == 16) && Visa(aux / 10) == true)
+    if ((cnt == 13 || cnt == 16) && Visa(aux / 10) == true)
       printf("VISA\n");
     else
+    {
       printf("INVALID\n");
+      return 0;
+    }
   }
+  printf("INVALID\n");
 }
