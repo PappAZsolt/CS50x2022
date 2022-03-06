@@ -34,10 +34,6 @@ bool Visa(long long x)
   return false;
 }
 
-/* int type(int x)
-{
-  if (x ==)
-} */
 
 int main()
 {
@@ -82,5 +78,9 @@ int main()
     x/=100;
   }
 
-  printf("%i", sum);
+  if (sum%10 == 0){
+    if (aux == 15)
+     printf("AMEX\n");
+    if (aux == )
+  }
 }
