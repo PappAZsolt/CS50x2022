@@ -36,5 +36,9 @@ int main(){
   long long x;
   do {
     x = get_long("Number: ");
-  }while (x > 1)
+  }while (x < 1);
+  long long aux = x;
+
+  
+
 }
