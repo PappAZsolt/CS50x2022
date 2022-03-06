@@ -60,18 +60,18 @@ int main()
 
   while (x2)
   {
-    int k = x2 % 10;
-    k *= 2;
-    if (k > 9)
+    int LastDigit = x2 % 10;
+    LastDigit *= 2;
+    if (LastDigit > 9)
     {
-      while (k)
+      while (LastDigit)
       {
-        sum += (k % 10) * 2;
-        k /= 10;
+        sum += (LastDigit % 10) * 2;
+        LastDigit /= 10;
       }
     }
     else
-      sum += k;
+      sum += LastDigit;
      x2/=100;
   }
 
