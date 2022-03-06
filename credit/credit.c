@@ -66,8 +66,9 @@ int main()
     {
       while (LastDigit)
       {
-        sum += ((LastDigit % 10) * 2);
-        printf("%i",sum);
+        int lastlastDigit = LastDigit % 10;
+        sum += ((lastlastDigit)*2);
+        printf("%i", sum);
         printf("\n");
         LastDigit /= 10;
       }
