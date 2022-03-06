@@ -75,7 +75,7 @@ int main()
     }
     else
       sum += LastDigit;
-    printf("%lli", x2);
+    printf("%i", sum);
     printf("\n");
     x2 /= 100;
   }
