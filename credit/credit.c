@@ -67,18 +67,20 @@ int main()
       while (LastDigit)
       {
         int lastlastDigit = LastDigit % 10;
-        sum += ((lastlastDigit)*2);
-        /* printf("%i", sum);
-        printf("\n"); */
+        sum += lastlastDigit;
         LastDigit /= 10;
       }
     }
     else
       sum += LastDigit;
-    printf("%i", sum);
-    printf("\n");
     x2 /= 100;
   }
 
-  /* printf("%lli", x2); */
+  while (x)
+  {
+    sum += x % 10;
+    x/=100;
+  }
+
+  printf("%i", sum);
 }
