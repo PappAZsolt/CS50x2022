@@ -58,25 +58,25 @@ int main()
   int sum = 0;
   long long x2 = x / 10;
 
-  while (x2)
-  {
-    int LastDigit = x2 % 10;
-    LastDigit *= 2;
-    if (LastDigit > 9)
-    {
-      while (LastDigit)
-      {
-        int lastlastDigit = LastDigit % 10;
-        sum += ((lastlastDigit)*2);
-        printf("%i", sum);
-        printf("\n");
-        LastDigit /= 10;
-      }
-    }
-    else
-      sum += LastDigit;
-    x2 /= 100;
-  }
+   while (x2)
+   {
+     int LastDigit = x2 % 10;
+     LastDigit *= 2;
+     if (LastDigit > 9)
+     {
+       while (LastDigit)
+       {
+         int lastlastDigit = LastDigit % 10;
+         sum += ((lastlastDigit)*2);
+         printf("%i", sum);
+         printf("\n");
+         LastDigit /= 10;
+       }
+     }
+     else
+       sum += LastDigit;
+     x2 /= 100;
+   }
 
-  /* printf("%i", sum); */
+  printf("%lli", x2);
 }
