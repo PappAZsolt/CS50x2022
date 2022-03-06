@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-bool AE(int x)
+bool AE(long long x)
 {
   if (x == 15)
   {
@@ -16,7 +16,7 @@ bool AE(int x)
   return false;
 }
 
-bool MC(int x)
+bool MC(long long x)
 {
   if (x == 16)
   {
@@ -31,7 +31,7 @@ bool MC(int x)
   return false;
 }
 
-bool Visa(int x)
+bool Visa(long long x)
 {
   if (x == 16)
   {
