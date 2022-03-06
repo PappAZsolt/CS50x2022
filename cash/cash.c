@@ -64,3 +64,4 @@ int calculate_pennies(int cents)
     // TODO
     return 0;
 }
+
