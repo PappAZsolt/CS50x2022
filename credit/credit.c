@@ -48,13 +48,15 @@ int main()
   } while (x < 1);
   long long aux = x;
   int cnt = 2;
+
   while (aux > 99)
   {
     aux /= 10;
     cnt++;
   }
+
   int sum = 0;
-  int x2 = x / 10;
+  long long x2 = x / 10;
 
   while (x2)
   {
@@ -67,8 +69,9 @@ int main()
       }
 
     else
-      sum +=
+      sum += k;
+    x2 /= 100;
   }
 
-  /* printf("%lli", aux); */
+  printf("%i", sum);
 }
