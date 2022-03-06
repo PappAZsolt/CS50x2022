@@ -61,18 +61,18 @@ int main()
   while (x2)
   {
     int k = x2 % 10;
-    if (k > 99)
+    k *= 2;
+    if (k > 9)
+    {
       while (k)
       {
         sum += (k % 10) * 2;
         k /= 10;
       }
-
+    }
     else
-      sum += k * 2;
-    /* printf("%lli",x2);
-    printf("\n"); */
-    x2 /= 100;
+      sum += k;
+     x2/=100;
   }
 
   printf("%i", sum);
