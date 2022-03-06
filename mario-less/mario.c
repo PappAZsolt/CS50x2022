@@ -5,5 +5,5 @@ int main(void)
 {
     do{
         int x = get_int("Height\n ");
-    }while()
+    }while(x<1 && x>10);
 }
