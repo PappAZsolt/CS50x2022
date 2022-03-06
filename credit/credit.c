@@ -64,12 +64,12 @@ int main()
     if (k > 99)
       while (k)
       {
-        sum += k;
+        sum += k * 2;
         k /= 10;
       }
 
     else
-      sum += k;
+      sum += k * 2;
     /* printf("%lli",x2);
     printf("\n"); */
     x2 /= 100;
