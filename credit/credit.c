@@ -70,8 +70,10 @@ int main()
 
     else
       sum += k;
+    printf("%lli",x2);
+    printf("\n");
     x2 /= 100;
   }
 
-  printf("%i", sum);
+  /* printf("%i", sum); */
 }
