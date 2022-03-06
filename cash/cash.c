@@ -84,7 +84,7 @@ int calculate_pennies(int cents)
     while (cents >= 1)
     {
         cnt++;
-        cents -= 25;
+        cents -= 1;
     }
     return cnt;
 }
