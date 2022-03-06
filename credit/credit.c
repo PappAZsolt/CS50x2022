@@ -41,7 +41,7 @@ bool Visa(long long x)
 
 int main()
 {
-  long long x;
+   unsigned long long x;
   do
   {
     x = get_long("Number: ");
@@ -53,6 +53,6 @@ int main()
     aux /= 10;
     cnt++;
   }
-  
+
   /* printf("%lli", aux); */
 }
