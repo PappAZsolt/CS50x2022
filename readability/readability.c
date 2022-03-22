@@ -15,9 +15,11 @@ int main(void)
 int count_letters(string text)
 {
   int cnt = 0;
-  tolower(text);
   for (int i = 1, n = strlen(text); i <= n; i++)
-    if (islower(i))
-     cnt++;
+  {
+
+    if (islower(text[i]))
+      cnt++;
+  }
   return cnt;
 }
