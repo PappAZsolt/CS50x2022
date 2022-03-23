@@ -20,9 +20,9 @@ int main(void)
     float AvgSentences = ((float)sentences / words) * 100;
     float index = 0.0588 * AvgLetters - 0.296 * AvgSentences - 15.8;
     if (index >= 16)
-        printf("index 16+\n");
+        printf("Grade 16+\n");
     else if (index < 1)
-        printf("Before index 1");
+        printf("Before Grade 1\n");
     else
         printf("Grade %i\n", (int)round(index));
 
