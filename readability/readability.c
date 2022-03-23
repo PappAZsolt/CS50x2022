@@ -16,8 +16,8 @@ int main(void)
     int letters = count_letters(text);
     int words = count_words(text);
     int sentences = count_sentences(text);
-    float AvgLetters = (letters / words) * 100.0;
-    float AvgSentences = (sentences / words) * 100.0;
+    float AvgLetters = ((float)letters / words) * 100;
+    float AvgSentences = ((float)sentences / words) * 100;
     float index = 0.0588 * AvgLetters - 0.296 * AvgSentences - 15.8;
     printf("Sentences: %i\n", sentences);
     printf("%f\n", AvgLetters);
