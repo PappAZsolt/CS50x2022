@@ -16,15 +16,18 @@ int main(void)
     int letters = count_letters(text);
     int words = count_words(text);
     int sentences = count_sentences(text);
-    int AvgLetters = (letters / words) * 100;
-    int AvgSentences = (sentences / words) * 100;
-    double Grade = 0.0588 * AvgLetters - 0.296 * AvgSentences - 15.8;
-    if (Grade >= 16)
-        printf("Grade 16+\n");
-    else if (Grade < 1)
-        printf("Before Grade 1");
+    float AvgLetters = (letters / words) * 100;
+    float AvgSentences = (sentences / words) * 100;
+    float index = 0.0588 * AvgLetters - 0.296 * AvgSentences - 15.8;
+    printf("%f\n", AvgLetters);
+    printf("%f\n", AvgSentences);
+    printf("%f\n", index);
+    /* if (index >= 16)
+        printf("index 16+\n");
+    else if (index < 1)
+        printf("Before index 1");
     else
-        printf("Grade %i\n", (int)round(Grade));
+        printf("index %i\n", (int)round(index)); */
 
     // index = 0.0588 * L - 0.296 * S - 15.8
 }
