@@ -17,7 +17,8 @@ int main(void)
     int sentences = count_sentences(text);
     int AvgLetters = (letters/words) * 100;
     int AvgSentences = (sentences/words) * 100;
-    
+    int Grade = 0.0588 * AvgLetters - 0.296 * AvgSentences - 15.8;
+    //index = 0.0588 * L - 0.296 * S - 15.8
 }
 
 int count_letters(string text)
