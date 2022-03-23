@@ -19,7 +19,7 @@ int main(void)
     int AvgSentences = (sentences/words) * 100;
     double Grade = 0.0588 * AvgLetters - 0.296 * AvgSentences - 15.8;
     //index = 0.0588 * L - 0.296 * S - 15.8
-    printf(")
+    printf("")
 }
 
 int count_letters(string text)
