@@ -7,7 +7,7 @@ int count_words(string text);
 int count_letters(string text);
 int count_sentences(string text);
 
-int punctuation[".!?"];
+int punctuation[] = ".?!";
 
 int main(void)
 {
