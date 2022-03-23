@@ -7,7 +7,7 @@ int count_words(string text);
 int count_letters(string text);
 int count_sentences(string text);
 
-string 
+int punctuation[".!?"];
 
 int main(void)
 {
@@ -44,7 +44,7 @@ int count_sentences(string text)
 {
     int count = 0;
     for (int i = 0, n = strlen(text); i < n; i++)
-        if (text[i] == )
+        if (text[i] ==)
             count++;
     return count;
 }
