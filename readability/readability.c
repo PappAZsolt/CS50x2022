@@ -36,7 +36,7 @@ int count_words(string text)
 
 int count_sentences(string text)
 {
-    int conut = 1;
+    int count = 1;
     for (int i = 0, n = strlen(text), i < n; i++)
         if (text[i] == '.')
             count++;
