@@ -44,7 +44,7 @@ int count_sentences(string text)
 {
     int count = 0;
     for (int i = 0, n = strlen(text); i < n; i++)
-        if (text[i] == punctuation)
+        if (strchr(text[i],punctuation))
             count++;
     return count;
 }
