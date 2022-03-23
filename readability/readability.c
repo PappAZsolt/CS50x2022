@@ -19,6 +19,7 @@ int main(void)
     float AvgLetters = (letters / words) * 100;
     float AvgSentences = (sentences / words) * 100;
     float index = 0.0588 * AvgLetters - 0.296 * AvgSentences - 15.8;
+    printf("Sentences: %i\n", sentences);
     printf("%f\n", AvgLetters);
     printf("%f\n", AvgSentences);
     printf("%f\n", index);
