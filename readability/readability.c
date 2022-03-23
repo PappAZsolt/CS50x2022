@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <ctype.h>
+#include <math.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -15,11 +16,17 @@ int main(void)
     int letters = count_letters(text);
     int words = count_words(text);
     int sentences = count_sentences(text);
-    int AvgLetters = (letters/words) * 100;
-    int AvgSentences = (sentences/words) * 100;
+    int AvgLetters = (letters / words) * 100;
+    int AvgSentences = (sentences / words) * 100;
     double Grade = 0.0588 * AvgLetters - 0.296 * AvgSentences - 15.8;
-    //index = 0.0588 * L - 0.296 * S - 15.8
-    printf("")
+    if (Grade >= 16)
+        printf("Grade 16+\n");
+    else if (Grade < 1)
+        printf("Before Grade 1");
+    else
+        printf("Grade %i\n", (int)round(Grade));
+
+    // index = 0.0588 * L - 0.296 * S - 15.8
 }
 
 int count_letters(string text)
