@@ -15,9 +15,9 @@ int main(void)
     int letters = count_letters(text);
     int words = count_words(text);
     int sentences = count_sentences(text);
-    printf("Letters: %i\n", letters);
-    printf("Words: %i\n", words);
-    printf("Sentences: %i\n", sentences);
+    int AvgLetters = (letters/words) * 100;
+    int AvgSentences = (sentences/words) * 100;
+    
 }
 
 int count_letters(string text)
