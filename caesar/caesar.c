@@ -33,8 +33,16 @@ bool only_digits(string s)
 char rotate(char c, int key)
 {
   if (isaplha(c))
-   {
-     if (isupper(c))
+  {
+    if (isupper(c))
+    {
+      if (c + key < 90)
+        // formula
+        else c += key;
+    }
+    else if (islower(c))
+    {
       
-   }
+    }
+  }
 }
