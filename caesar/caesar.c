@@ -17,13 +17,12 @@ int main(int argc, string argv[])
 
   string plaintext = get_string("plaintext: ");
   printf("ciphertext: %s\n", plaintext);
-  string newtext = NULL;
   int key = atoi(argv[1]);
   printf("key: %i\n", key);
 
   for (int i = 0, n = strlen(plaintext); i < n; i++)
   {
-    newtext[i] = rotate(plaintext[i], key);
+    string newtext[i] = rotate(plaintext[i], key);
   }
   printf("Ciphertext: %s\n", newtext);
 }
@@ -44,16 +43,16 @@ char rotate(char c, int key)
     if (isupper(c))
     {
       if (c + key > 90)
-        // formula
-        else if (c + key < 98)
-            c = c + key;
+        c = 0;
+      else if (c + key < 98)
+        c = c + key;
     }
     else if (islower(c))
     {
       if (c + key > 122)
-        // formula
-        else if (c + key < 122)
-            c = c + key;
+        c = 0;
+      else if (c + key < 122)
+        c = c + key;
     }
   }
   return c;
