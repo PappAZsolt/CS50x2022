@@ -17,15 +17,15 @@ int main(int argc, string argv[])
 
   string plaintext = get_string("plaintext: ");
   printf("ciphertext: %s\n", plaintext);
-  string newtext;
+  string newtext = NULL;
   int key = atoi(argv[1]);
   printf("key: %i\n", key);
 
-  for (int i = 0,n = strlen(plaintext);i < n;i++)
+  for (int i = 0, n = strlen(plaintext); i < n; i++)
   {
     newtext[i] = rotate(plaintext[i], key);
   }
-  printf("Ciphertext: %s\n",newtext);
+  printf("Ciphertext: %s\n", newtext);
 }
 
 bool only_digits(string s)
@@ -39,7 +39,7 @@ bool only_digits(string s)
 
 char rotate(char c, int key)
 {
-  if (isaplha(c))
+  if (isalpha(c))
   {
     if (isupper(c))
     {
@@ -50,8 +50,8 @@ char rotate(char c, int key)
     else if (islower(c))
     {
       if (c + key > 122)
-       // formula
-      else c += key;
+        // formula
+        else c += key;
     }
   }
   return c;
