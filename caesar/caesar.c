@@ -5,6 +5,7 @@
 #include <string.h>
 
 bool only_digits(string s);
+int ciphertext(string s);
 
 int main(int argc, string argv[])
 {
@@ -16,7 +17,8 @@ int main(int argc, string argv[])
   else
   {
     string plaintext = get_string("plaintext: ");
-    printf("%s\n", plaintext);
+    string newtext = ciphertext(plaintext);
+    printf("ciphertext: %s\n", newtext);
   }
 }
 
@@ -31,5 +33,15 @@ bool only_digits(string s)
 
 int ciphertext(string s)
 {
-  
+  for (int i = 0, n = strlen(s); i < n; i++)
+  {
+    if (isdigit(s[i]))
+    {
+      if (isupper(s[i]))
+        s[i] = s[i] - 65;
+      else if (islower(s[i]))
+        s[i] = s[i] - 97;
+    }
+  }
+  return s;
 }
