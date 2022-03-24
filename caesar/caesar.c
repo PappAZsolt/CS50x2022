@@ -45,13 +45,15 @@ char rotate(char c, int key)
     {
       if (c + key > 90)
         // formula
-        else c = c + key;
+        else if (c + key < 98)
+            c = c + key;
     }
     else if (islower(c))
     {
       if (c + key > 122)
         // formula
-        else c = c + key;
+        else if (c + key < 122)
+            c = c + key;
     }
   }
   return c;
