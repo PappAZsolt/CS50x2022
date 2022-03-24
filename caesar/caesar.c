@@ -29,3 +29,7 @@ bool only_digits(string s)
   return true;
 }
 
+int ciphertext(string s)
+{
+  
+}
