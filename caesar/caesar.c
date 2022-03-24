@@ -4,7 +4,8 @@
 
 int main(int argc, string argv[])
 {
-  
+  if (only_digits(argv[1]))
+    
 }
 
 bool only_digits(string s)
