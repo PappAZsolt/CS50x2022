@@ -5,7 +5,7 @@
 #include <string.h>
 
 bool only_digits(string s);
-int ciphertext(string s);
+char rotate(char c, int n);
 
 int main(int argc, string argv[])
 {
@@ -31,17 +31,7 @@ bool only_digits(string s)
   return true;
 }
 
-int ciphertext(string s)
+char rotate(char c, int key)
 {
-  for (int i = 0, n = strlen(s); i < n; i++)
-  {
-    if (isdigit(s[i]))
-    {
-      if (isupper(s[i]))
-        s[i] = s[i] - 65;
-      else if (islower(s[i]))
-        s[i] = s[i] - 97;
-    }
-  }
-  return s;
+  
 }
