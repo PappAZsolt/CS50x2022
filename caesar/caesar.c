@@ -4,8 +4,13 @@
 
 int main(int argc, string argv[])
 {
-  if (only_digits(argv[1]))
-    
+  if (only_digits(argv[1]) == 0 || argv[2 ])
+   {
+     printf("Usage: ./caesar key");
+     return 1;
+   }
+
+
 }
 
 bool only_digits(string s)
