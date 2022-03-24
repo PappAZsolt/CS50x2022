@@ -14,12 +14,12 @@ int main(int argc, string argv[])
     printf("Usage: ./caesar key\n");
     return 1;
   }
-  else
-  {
-    string plaintext = get_string("plaintext: ");
-    string newtext = ciphertext(plaintext);
-    printf("ciphertext: %s\n", newtext);
-  }
+
+  string plaintext = get_string("plaintext: ");
+  string newtext = ciphertext(plaintext);
+  printf("ciphertext: %s\n", newtext);
+  int key = atoi(argv[1]);
+  printf("key: %i\n", key);
 }
 
 bool only_digits(string s)
