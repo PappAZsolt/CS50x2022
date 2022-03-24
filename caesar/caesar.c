@@ -4,6 +4,6 @@
 
 int main(int argc, string argv[])
 {
-  int key = atoi(argv[1]);
-  printf("%i\n", key);
+  printf("%s\n", argv[3]);
 }
+
