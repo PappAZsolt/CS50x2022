@@ -10,7 +10,7 @@ int main(int argc, string argv[])
 {
   if (only_digits(argv[1]) == 0 || argv[2] != NULL)
   {
-    printf("Usage: ./caesar key");
+    printf("Usage: ./caesar key\n");
     return 1;
   }
   else
