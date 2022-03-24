@@ -22,8 +22,9 @@ int main(int argc, string argv[])
 
   for (int i = 0, n = strlen(plaintext); i < n; i++)
   {
-    string newtext[i] = rotate(plaintext[i], key);
+    printf("%c", rotate(plaintext[i], key));
   }
+  printf("\n");
   printf("Ciphertext: %s\n", newtext);
 }
 
@@ -38,21 +39,18 @@ bool only_digits(string s)
 
 char rotate(char c, int key)
 {
-  if (isalpha(c))
+  if (isaplpha(c))
   {
     if (isupper(c))
     {
-      if (c + key > 90)
-        c = 0;
-      else if (c + key < 98)
-        c = c + key;
+      char newWord = ((int)c - 65 + key) % 26;
+      return newWord + 65;
     }
+
     else if (islower(c))
     {
-      if (c + key > 122)
-        c = 0;
-      else if (c + key < 122)
-        c = c + key;
+      char newWord = ((int)c - 97 + key) % 26;
+      return newWord + 97;
     }
   }
   return c;
