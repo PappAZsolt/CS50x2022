@@ -1,12 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 bool only_digits(string s);
 
 int main(int argc, string argv[])
 {
-  if (only_digits(argv[1]) == 0 || argv[2] != '\0')
+  if (only_digits(argv[1]) == 0 || argv[2] != NULL)
   {
     printf("Usage: ./caesar key");
     return 1;
