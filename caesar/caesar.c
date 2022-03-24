@@ -30,7 +30,11 @@ bool only_digits(string s)
   return true;
 }
 
-/* char rotate(char c, int key)
+char rotate(char c, int key)
 {
-
-} */
+  if (isaplha(c))
+   {
+     if (isupper(c))
+      
+   }
+}
