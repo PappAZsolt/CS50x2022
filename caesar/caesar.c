@@ -15,7 +15,7 @@ int main(int argc, string argv[])
   }
   else
   {
-    string plaintext = get_string("plaintext: \n");
+    string plaintext = get_string("plaintext: ");
     printf("%s\n", plaintext);
   }
 }
