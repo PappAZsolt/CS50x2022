@@ -21,10 +21,11 @@ int main(int argc, string argv[])
   int key = atoi(argv[1]);
   printf("key: %i\n", key);
 
-  for (int i = 0,n = strlen(n);i < n;i++)
+  for (int i = 0,n = strlen(plaintext);i < n;i++)
   {
-    newtext[i] = rotate
+    newtext[i] = rotate(plaintext[i], key);
   }
+  printf("Ciphertext: %s\n",newtext);
 }
 
 bool only_digits(string s)
