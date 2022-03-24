@@ -3,5 +3,6 @@
 
 int main(int argc, string argv[])
 {
-  
+  int key = argv[1];
+  printf("%i\n", key);
 }
