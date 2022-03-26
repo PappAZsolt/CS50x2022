@@ -23,5 +23,21 @@ int main(void)
 
 int compute_score(string word)
 {
-    
+    int iteration = 0;
+    int sum = 0;
+    if (isalpha(c))
+    {
+        if (isupper(c))
+         {
+             iteration = c - 65;
+             sum += iteration;
+         }
+        else if (islower(c))
+         {
+             iteration = c - 97;
+             sum += iteration;
+         }
+        else sum +=0;
+
+    }
 }
