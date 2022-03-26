@@ -25,19 +25,14 @@ int compute_score(string word)
 {
     int iteration = 0;
     int sum = 0;
-    if (isalpha(c))
+    for (int i = 0, n = strlen(word); i++)
     {
-        if (isupper(c))
+        if (isalpha(word[i]))
          {
-             iteration = c - 65;
-             sum += iteration;
+             if (isupper(word[i]))
+              {
+                  
+              }
          }
-        else if (islower(c))
-         {
-             iteration = c - 97;
-             sum += iteration;
-         }
-        else sum +=0;
-
     }
 }
